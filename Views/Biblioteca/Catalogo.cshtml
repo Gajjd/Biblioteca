@@ -1,0 +1,21 @@
+@using Biblioteca.Repositories
+@model List<Biblioteca.Models.Livro>
+<link rel="stylesheet" href="~/css/style.css">
+
+<div class="catalogo-grid">
+    @* Precisa mudar essa parte para receber do banco de dados *@
+    @foreach (var livro in Model)
+    {
+        <div class="catalogo-item">
+            <img src="~/img/@livro.Imagem" alt="@livro.Titulo" width="210px" class="imagemsobre">
+            <div class="catalogo-info">
+                <div>TÍTULO: @livro.Titulo</div>
+                <div>Número de páginas: @livro.QtdPaginas</div>
+                <div>Autor: @livro.Autor</div>
+                <div>GÊNERO: @livro.Genero</div>
+                <div>DATA DE PUBLICAÇÃO: @livro.DataPublicacao</div>
+                <div class="botao"><button><a class="nav-link" asp-area="" asp-controller="Biblioteca" asp-action="livroDetalhe" asp-route-id="@livro.Id">Sobre o livro</a></button></div>
+            </div>
+        </div>
+    }
+</div>
