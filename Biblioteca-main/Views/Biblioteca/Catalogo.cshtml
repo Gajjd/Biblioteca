@@ -1,0 +1,71 @@
+@model List<Biblioteca.Models.Livro>
+
+<link rel="stylesheet" href="~/css/style.css">
+
+<div class="catalogo-grid">
+
+    @if (Model != null)
+    {
+        @foreach (var livro in Model)
+        {
+            <div class="catalogo-item">
+
+                <img src="~/img/@livro.Imagem" 
+                     alt="@livro.Titulo" 
+                     width="210px" 
+                     class="imagemsobre">
+
+                <div class="catalogo-info">
+
+                    <div>TÍTULO: @livro.Titulo</div>
+                    <div>Número de páginas: @livro.QtdPaginas</div>
+                    <div>Autor: @livro.Autor.Nome</div>
+                    <div>GÊNERO: @livro.Genero</div>
+                    <div>DATA DE PUBLICAÇÃO: @livro.DataPublicacao</div>
+
+
+                    <div class="botao">
+                        <button>
+                            <a class="nav-link"
+                               asp-area=""
+                               asp-controller="Biblioteca"
+                               asp-action="livroDetalhe"
+                               asp-route-id="@livro.Id">
+                                Sobre o livro
+                            </a>
+                        </button>
+                    </div>
+
+
+                    <div class="botao">
+                        <button>
+                            <a class="nav-link"
+                               asp-area=""
+                               asp-controller="Biblioteca"
+                               asp-action="EditarLivro"
+                               asp-route-id="@livro.Id">
+                                Editar
+                            </a>
+                        </button>
+                    </div>
+
+
+                    <div class="botao">
+                        <button>
+                            <a class="nav-link"
+                               asp-area=""
+                               asp-controller="Biblioteca"
+                               asp-action="ExcluirLivro"
+                               asp-route-id="@livro.Id">
+                                Excluir
+                            </a>
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+        }
+    }
+
+</div>

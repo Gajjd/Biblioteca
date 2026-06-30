@@ -1,0 +1,30 @@
+@model Biblioteca.Models.ExcluirLivroViewModel
+@{
+    ViewData["Title"] = "Excluir Livro";
+}
+<div class="container mt-4">
+    <h1 class="text-danger">Excluir Livro</h1>
+    <h3 class="text-muted">Tem certeza de que deseja excluir perma
+        nentemente este livro?</h3>
+        <hr />
+        <div class="card border-danger mb-4">
+            <div class="card-header bg-danger text-white">
+                <strong>Dados do Registro</strong>
+            </div>
+            <div class="card-body">
+                <dl class="row mb-0">
+                    <dt class="col-sm-3">Título do Livro:</dt>
+                    <dd class="col-sm-9">@Model.Titulo</dd>
+                    <dt class="col-sm-3">Autor Vinculado:</dt>
+                    <dd class="col-sm-9">@Model.AutorNome</dd>
+                </dl>
+            </div>
+        </div>
+        <form asp-action="ExcluirLivro" method="post">
+            <input type="hidden" asp-for="Id" name="id" />
+
+            <button type="submit" class="btn btn-danger">Sim, Excluir
+            </button>
+            <a asp-action="Livro" class="btn btn-secondary">Cancelar</a>
+            </form>
+        </div>
