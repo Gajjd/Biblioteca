@@ -1,0 +1,65 @@
+@model List<Biblioteca.Models.Autor>
+
+<link rel="stylesheet" href="~/css/style.css">
+
+<div class="catalogo-grid">
+
+    @if (Model != null)
+    {
+        @foreach (var Autor in Model)
+        {
+            <div class="catalogo-item">
+
+                <div class="catalogo-info">
+
+                    <div>Nome: @Autor.Nome</div>
+                    <div>Nacionalidade: @Autor.Nacionalidade</div>
+                    <div>Nascimento: @Autor.Nascimento</div>
+                    <div>Morte: @Autor.Morte</div>
+
+
+                    <div class="botao">
+                        <button>
+                            <a class="nav-link"
+                               asp-area=""
+                               asp-controller="Biblioteca"
+                               asp-action="AutorDetalhe"
+                               asp-route-id="@Autor.Id">
+                                Sobre o autor
+                            </a>
+                        </button>
+                    </div>
+
+
+                    <div class="botao">
+                        <button>
+                            <a class="nav-link"
+                               asp-area=""
+                               asp-controller="Biblioteca"
+                               asp-action="EditarAutor"
+                               asp-route-id="@Autor.Id">
+                                Editar
+                            </a>
+                        </button>
+                    </div>
+
+
+                    <div class="botao">
+                        <button>
+                            <a class="nav-link"
+                               asp-area=""
+                               asp-controller="Biblioteca"
+                               asp-action="ExcluirAutor"
+                               asp-route-id="@Autor.Id">
+                                Excluir
+                            </a>
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+        }
+    }
+
+</div>

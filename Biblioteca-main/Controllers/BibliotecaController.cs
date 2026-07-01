@@ -199,7 +199,12 @@ public class BibliotecaController : Controller
 
         return View(livros);
     }
+     public async Task<IActionResult> Autores()
+    {
+        var Autores = await _autorRepository.BuscarTodosAutoresAsync();
 
+        return View(Autores);
+    }
 
 
 
@@ -261,9 +266,45 @@ public class BibliotecaController : Controller
         if (temLivros)
         {
             // Se houver livros, cancela a operação e joga de volta para a listagem
-            return RedirectToAction("Autor");
+            return RedirectToAction("Autores");
         }
         await _autorRepository.ExcluirAutorAsync(id);
-        return RedirectToAction("Autor");
+        return RedirectToAction("Autores");
+    }
+    [HttpGet]
+    public async Task<IActionResult> EditarAutor(int id)
+    {
+        var autores = await _autorRepository.BuscarTodosAutoresAsync();
+
+        var Autor = autores.FirstOrDefault(x => x.Id == id);
+
+
+        if (Autor == null)
+            return NotFound();
+
+
+
+        var viewModel = new EditarAutorViewModel
+        {
+            Id = Autor.Id,
+            Nome = Autor.Nome,
+            Nacionalidade = Autor.Nacionalidade,
+            Nascimento = Autor.Nascimento,
+            Morte = Autor.Morte,
+            Biografia = Autor.Biografia,
+        };
+        return View(viewModel);
+    }
+    [HttpPost]
+    public async Task<IActionResult> EditarAutor(EditarAutorViewModel model)
+    {
+    if (!ModelState.IsValid)
+    {
+        return View(model);
+    }
+
+    await _autorRepository.AtualizarAutorAsync(model);
+
+    return RedirectToAction("Autores");
     }
 }

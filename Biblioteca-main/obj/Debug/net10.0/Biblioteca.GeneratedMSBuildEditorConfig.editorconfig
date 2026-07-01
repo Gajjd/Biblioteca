@@ -1,0 +1,95 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFramework = net10.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.RootNamespace = Biblioteca
+build_property.RootNamespace = Biblioteca
+build_property.ProjectDir = C:\Users\teste\Music\Gabriel Antonio Andrighetto\Biblioteca-main\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\teste\Music\Gabriel Antonio Andrighetto\Biblioteca-main
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Biblioteca/AutorDetalhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxBdXRvckRldGFsaGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Biblioteca/Autores.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxBdXRvcmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Biblioteca/Catalogo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxDYXRhbG9nby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Biblioteca/CriarAutor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxDcmlhckF1dG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Biblioteca/CriarLivro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxDcmlhckxpdnJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Biblioteca/EditarAutor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxFZGl0YXJBdXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Biblioteca/EditarLivro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxFZGl0YXJMaXZyby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Biblioteca/ExcluirAutor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxFeGNsdWlyQXV0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Biblioteca/ExcluirLivro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxFeGNsdWlyTGl2cm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Biblioteca/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Biblioteca/LivroDetalhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlibGlvdGVjYVxMaXZyb0RldGFsaGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/teste/Music/Gabriel Antonio Andrighetto/Biblioteca-main/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bunr9m1pqn

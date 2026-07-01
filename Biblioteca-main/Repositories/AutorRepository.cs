@@ -42,7 +42,22 @@ public class AutorRepository : IAutorRepository
     await _context.SaveChangesAsync();
     return true;
     }
-    
+   public async Task AtualizarAutorAsync(EditarAutorViewModel model)
+    {
+    var autor = await _context.Autores
+        .FirstOrDefaultAsync(x => x.Id == model.Id);
+
+    if (autor == null)
+        return;
+
+    autor.Nome = model.Nome;
+    autor.Nacionalidade = model.Nacionalidade;
+    autor.Nascimento = model.Nascimento;
+    autor.Morte = model.Morte;
+    autor.Biografia = model.Biografia;
+
+    await _context.SaveChangesAsync();
+    }
 }
 
 public interface IAutorRepository 
@@ -52,6 +67,5 @@ public interface IAutorRepository
     //Task<bool> AtualizarAutorAsync(Autor autor);
     Task<bool> PossuiLivrosVinculadosAsync(int autorId);
     Task<bool> ExcluirAutorAsync(int id); 
-}
-
-    
+    Task AtualizarAutorAsync(EditarAutorViewModel model);
+}    
